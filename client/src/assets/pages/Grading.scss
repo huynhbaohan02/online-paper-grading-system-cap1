@@ -1,0 +1,137 @@
+.content-container {
+    display: flex;
+    width: 100%;
+    padding-bottom: 40px;
+
+    // justify-content: space-between;
+    .assignment-info-box {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .assignment-info {
+            display: flex;
+            background-color: rgb(232, 233, 235);
+            border-radius: 2px;
+            justify-content: space-around;
+        }
+
+        .assignment-info p:first-child {
+            padding-left: 40px;
+        }
+
+        .assignment-info p {
+            margin: 0;
+            padding: 10px 40px 10px 0px;
+            font-weight: 500;
+        }
+    }
+
+    .assigment-images {
+        justify-content: center;
+        text-align: center;
+        padding: 8px 0;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        background-color: rgb(252, 252, 252);
+        cursor: pointer;
+
+        .assigment-images i {
+            cursor: pointer;
+        }
+
+        .assigment-images span {
+            padding: 0 5px;
+        }
+    }
+
+    .image-container {
+        cursor: pointer;
+        z-index: 999;
+        border: 1px solid rgb(232, 233, 235);
+        border-radius: 2px;
+    }
+}
+
+
+// tools
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;
+    border: 1px solid #ccc;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: center;
+
+    .grading-tools-box {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 10px;
+
+        // box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.1);
+        // border: 1px solid rgb(210, 210, 210);
+        height: 450px;
+        border-radius: 2px;
+        scrollbar-width: thin;
+        /* Chỉ áp dụng cho Firefox */
+        scrollbar-color: #888 transparent;
+        overflow-y: scroll;
+        /* Cho phép cuộn theo trục Y */
+        // border: 1px solid #ccc; /* Viền để tạo độ rõ ràng */
+        scrollbar-width: 6px;
+        /* Điều chỉnh chiều dài của thanh cuộn */
+    }
+}
+
+/* Thiết lập kích thước thanh cuộn cho trình duyệt dựa trên Webkit (Safari và Chrome) */
+.grading-tools-box::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Màu sắc của thanh cuộn cho trình duyệt dựa trên Webkit (Safari và Chrome) */
+.grading-tools-box::-webkit-scrollbar-thumb {
+    background-color: #4e73df;
+    border-radius: 6px;
+}
+
+/* Màu sắc của thanh cuộn khi di chuột qua cho trình duyệt dựa trên Webkit (Safari và Chrome) */
+.grading-tools-box::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.grading-tools {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.input-container {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+
+    .textarea {
+        width: 100%;
+        border: none;
+        outline: none;
+        resize: none;
+        /* Ngăn chặn người dùng thay đổi kích thước */
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.2;
+        height: 120px;
+    }
+
+    .textarea::placeholder {
+        position: absolute;
+        top: 0;
+        left: 5px;
+        /* Đặt ký tự đầu sát mép trái */
+        color: #aaa;
+        font-size: 14px;
+    }
+}
